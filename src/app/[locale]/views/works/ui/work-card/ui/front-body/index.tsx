@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import { Work } from "@/app/models/work";
-import { BASE_URL } from "@/app/constants/page.constants";
 
 interface FrontBodyProps {
   work: Work;
@@ -16,7 +15,7 @@ export const FrontBody: React.FC<FrontBodyProps> = ({ work }) => {
         <Image
           className="w-3/4 self-center mt-2"
           src={{
-            src: BASE_URL + "imgs/works/" + work.srcImg,
+            src: "/imgs/works/" + work.srcImg,
             width: 300,
             height: 300,
           }}

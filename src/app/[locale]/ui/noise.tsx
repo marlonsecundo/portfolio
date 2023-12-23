@@ -2,14 +2,9 @@
 import React, { useMemo, useRef } from "react";
 import { twMerge } from "tailwind-merge";
 
-import { debug } from "../../constants/page.constants";
 import { useWindowScroll, useWindowSize } from "@uidotdev/usehooks";
 
 const Noise: React.FC = () => {
-  const bgClass = debug
-    ? `bg-[url('/imgs/noise6.png')]`
-    : `bg-[url('/portfolio/imgs/noise6.png')]`;
-
   const [{ y }] = useWindowScroll();
   const { height } = useWindowSize();
 
@@ -39,7 +34,7 @@ const Noise: React.FC = () => {
             "absolute inset-0 bg-[200px] bg-repeat opacity-50 pointer-events-none ",
             "top-[-300%] left-[-150%] h-[600%] w-[600%]",
             visible && "animate-grain",
-            bgClass
+            `bg-[url('/imgs/noise6.png')]`
           )}
         />
       </div>

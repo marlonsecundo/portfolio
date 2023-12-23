@@ -2,8 +2,6 @@ import { Production } from "@/app/models/production";
 import React from "react";
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
-import { useAnimateWhenVisible } from "@/app/hooks/useAnimateWhenVisible";
-import { BASE_URL } from "@/app/constants/page.constants";
 
 interface ProductionCardImageProps {
   p: Production;
@@ -36,7 +34,7 @@ const ProductionCardImage: React.FC<ProductionCardImageProps> = ({
             <Image
               className="object-cover w-full"
               src={{
-                src: BASE_URL + "imgs/productions/" + p.imgSrc,
+                src: "/imgs/productions/" + p.imgSrc,
                 width: 700,
                 height: 700,
               }}

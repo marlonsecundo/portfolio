@@ -1,4 +1,3 @@
-import { BASE_URL } from "@/app/constants/page.constants";
 import Image from "next/image";
 import React from "react";
 import { twMerge } from "tailwind-merge";
@@ -23,7 +22,7 @@ const TechCard: React.FC<TechCardProps> = ({ tech, titleVisible = true }) => {
           "absolute object-contain" + (titleVisible ? " max-h-[55%] " : "")
         }
         src={{
-          src: BASE_URL + "imgs/techs/" + tech.srcImg,
+          src: "/imgs/techs/" + tech.srcImg,
           width: 100,
           height: 100,
         }}

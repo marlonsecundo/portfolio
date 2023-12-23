@@ -1,5 +1,3 @@
-export const debug = process.env.NODE_ENV !== "production";
-
 export const PAGE_VIEWS_COUNT = 5;
 
 export enum ViewsIDs {
@@ -11,5 +9,3 @@ export enum ViewsIDs {
 }
 
 export const LOCALES = ["pt", "en"];
-
-export const BASE_URL = debug ? "/" : "/portfolio";

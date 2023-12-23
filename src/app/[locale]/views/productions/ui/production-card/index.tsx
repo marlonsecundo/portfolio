@@ -2,7 +2,6 @@ import { Production } from "@/app/models/production";
 import React from "react";
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
-import { BASE_URL } from "@/app/constants/page.constants";
 
 interface ProductionCardProps {
   index: number;
@@ -47,7 +46,7 @@ const ProductionCard: React.FC<ProductionCardProps> = ({
             <Image
               className="mask mask-squircle object-cover w-20 h-20"
               src={{
-                src: BASE_URL + "imgs/productions/" + p.imgSrc,
+                src: "/imgs/productions/" + p.imgSrc,
                 width: 300,
                 height: 300,
               }}

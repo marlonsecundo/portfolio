@@ -1,7 +1,6 @@
 import { Work } from "@/app/models/work";
 import React from "react";
 import Image from "next/image";
-import { BASE_URL } from "@/app/constants/page.constants";
 
 interface BackendBodyProps {
   work: Work;
@@ -14,7 +13,7 @@ const BackendBody: React.FC<BackendBodyProps> = ({ work }) => {
         <Image
           className="w-3/4 self-center mt-2"
           src={{
-            src: BASE_URL + "imgs/works/" + work.srcImg,
+            src: "/imgs/works/" + work.srcImg,
             width: 300,
             height: 300,
           }}

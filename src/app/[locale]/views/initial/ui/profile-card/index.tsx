@@ -5,8 +5,11 @@ import Image from "next/image";
 import a from "@/../public/imgs/profile.jpg";
 
 import { twMerge } from "tailwind-merge";
+import { useTranslations } from "next-intl";
 
 const ProfileCard: React.FC = () => {
+  const t = useTranslations("initial.profileCard");
+
   return (
     <div
       className={twMerge(
@@ -27,10 +30,12 @@ const ProfileCard: React.FC = () => {
       </div>
 
       <p className="mt-3 text-justify text-base w-fit">
-        Hi! I am Marlon Secundo,<br></br>I am a Dev Bachelor in I.T.
+        {t("text1")}
+        <br></br>
+        {t("text2")}
       </p>
 
-      <p className="mt-3 text-secondary">and a little more.</p>
+      <p className="mt-3 text-secondary">{t("text3")}</p>
     </div>
   );
 };

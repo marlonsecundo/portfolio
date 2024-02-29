@@ -93,7 +93,7 @@ export const works = {
         technologies[1],
         technologies[3],
       ],
-      expText: "I worked as a desktop developer on new features of the system.",
+      expText: "",
       bulletPoints: "DESKTOP, BACKEND",
       year: "2021",
       description:
@@ -233,8 +233,7 @@ export const works = {
         technologies[1],
         technologies[3],
       ],
-      expText:
-        "Trabalhei como desenvolvedor desktop em novas funcionalidades do sistema.",
+      expText: "",
       bulletPoints: "DESKTOP, BACKEND",
       year: "2021",
       description:
